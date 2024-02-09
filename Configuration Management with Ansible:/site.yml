@@ -1,0 +1,7 @@
+- name: Configure EC2 Instances
+  hosts: ec2_instances
+  become: yes
+  roles:
+  - common
+  - jenkins
+  - sonarqube

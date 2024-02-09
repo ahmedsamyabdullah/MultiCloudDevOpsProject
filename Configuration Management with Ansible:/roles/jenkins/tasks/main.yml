@@ -1,0 +1,21 @@
+- name: Install Jenkins
+  apt:
+    name: jenkins
+    state: present
+  become: yes
+
+- name: Start Jenkins service
+  service:
+    name: jenkins
+    state: started
+    enabled: yes
+  become: yes
+
+- name: Set up Jenkins environment variables
+  lineinfile:
+    path: /etc/default/jenkins
+    regexp: "{{ item.regexp }}"
+    line: "{{ item.line }}"
+  become: yes
+  loop:
+  - {regexp: '^JENKINS_HOME=', line: 'JENKINS_HOME=/var/lib/jenkins'}
