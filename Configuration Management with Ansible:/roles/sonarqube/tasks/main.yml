@@ -1,0 +1,12 @@
+- name: Install SonarQube
+  apt:
+    name: sonarqube
+    state: present
+  become: yes
+
+- name: Start SonarQube service
+  service:
+    name: sonarqube
+    state: started
+    enabled: yes
+  become: yes

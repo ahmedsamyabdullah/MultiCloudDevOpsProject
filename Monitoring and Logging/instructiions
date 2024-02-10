@@ -1,0 +1,13 @@
+•	First we need Access to an OpenShift Cluster
+ 
+•	Steps : 
+1-	Deploy Elasticsearch Operator
+ 
+2-	Deploy Elasticsearch Cluster
+-	I created elastic-cluster.yml
+3-	Deploy Fluentd for Log Collection
+-	I created flunted.yml file
+4-	Deploy Kibana
+o	I created kibana.yml
+5-	Access Kibana Dashboard
+	

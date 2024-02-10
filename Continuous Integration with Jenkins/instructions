@@ -1,0 +1,20 @@
+Jenkins Installed
+Docker Installed on Jenkins Server
+Docker Plugin Installed
+jenkins Job Configuration Steps:
+Create a New Jenkins Job:
+
+Open Jenkins and click on "New Item" to create a new job.
+Enter a name for your job (e.g., "BuildDockerImage") and select "Freestyle project."
+Configure Source Code Management:
+
+In the "Source Code Management" section, select your version control system (e.g., Git).
+Enter the repository URL and configure authentication if needed.
+Configure Build Triggers:
+
+In the "Build Triggers" section, select the trigger that suits your workflow (e.g., "Poll SCM" to poll for changes).
+Set the schedule for polling if you selected "Poll SCM."
+Configure Build Steps
+Configure Post-Build Actions
+Save the Jenkins Job Configuration
+Run the Jenkins Job Manually
